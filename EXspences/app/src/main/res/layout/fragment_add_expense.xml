@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/add_expense_place_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Place: "/>
+
+    <EditText
+        android:id="@+id/add_expense_place_edit_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/add_expense_place_label"
+        />
+
+
+    <TextView
+        android:id="@+id/add_expense_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_place_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:text="Category: "/>
+
+    <Spinner
+        android:id="@+id/add_expense_category_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp"
+        app:layout_constraintStart_toEndOf="@id/add_expense_category_label"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_place_edit_text"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/add_expense_account_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_category_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:text="Account: "/>
+
+    <Spinner
+        android:id="@+id/add_expense_account_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp"
+        app:layout_constraintStart_toEndOf="@id/add_expense_account_label"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_category_spinner"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/add_expense_details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_account_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Details: "/>
+
+    <EditText
+        android:id="@+id/add_expense_details_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_account_spinner"
+        app:layout_constraintStart_toEndOf="@id/add_expense_details_label"
+        />
+
+    <TextView
+        android:id="@+id/add_expense_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_details_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="Amount: "/>
+
+    <EditText
+        android:id="@+id/add_expense_amount_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_details_text"
+        app:layout_constraintStart_toEndOf="@id/add_expense_amount_label"
+        android:numeric="decimal"
+        />
+
+    <TextView
+        android:id="@+id/add_expense_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_amount_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="Date: "/>
+
+    <DatePicker
+        android:id="@+id/add_expense_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_expense_date_label"
+        app:layout_constraintStart_toEndOf="@id/add_expense_date_label"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        />
+
+
+
+
+    <!--    <GridView-->
+<!--        android:id="@+id/category_icons_grid"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/choose_a_category_label"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:numColumns="4"-->
+<!--        android:columnWidth="90dp"-->
+<!--        android:horizontalSpacing="10dp"-->
+<!--        android:verticalSpacing="10dp"-->
+<!--        android:stretchMode="columnWidth"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

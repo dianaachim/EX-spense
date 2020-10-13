@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_et" />
+
+<!--    <com.facebook.login.widget.LoginButton-->
+<!--        android:id="@+id/facebook_button"-->
+<!--        android:layout_width="86dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:src="@mipmap/ic_facebook_foreground"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/google_button"-->
+<!--        app:layout_constraintHorizontal_bias="0.365"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/login_button"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_button"-->
+<!--        android:background="@color/colorWhite"/>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/google_button"-->
+<!--        android:layout_width="86dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:src="@mipmap/ic_google_foreground"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/login_button"-->
+<!--        app:layout_constraintHorizontal_bias="0.365"-->
+<!--        app:layout_constraintStart_toEndOf="@id/facebook_button"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_button"-->
+<!--        android:background="@color/colorWhite"/>-->
+
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_et"
+        />
+
+    <TextView
+        android:id="@+id/do_not_have_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Don't have an account? Register here"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="?attr/selectableItemBackground"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
